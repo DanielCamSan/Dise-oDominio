@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Diseño Guiado por el Dominio y SOLID/1.0.0": {
+        "runtime": {
+          "Diseño Guiado por el Dominio y SOLID.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Diseño Guiado por el Dominio y SOLID/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

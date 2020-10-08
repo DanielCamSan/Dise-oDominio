@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Diseño_Guiado_por_el_Dominio_y_SOLID</RootNamespace>
+  </PropertyGroup>
+
+</Project>

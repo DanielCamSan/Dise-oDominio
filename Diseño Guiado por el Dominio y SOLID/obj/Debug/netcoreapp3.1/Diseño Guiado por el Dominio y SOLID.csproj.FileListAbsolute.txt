@@ -1,0 +1,13 @@
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\bin\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.exe
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\bin\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.deps.json
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\bin\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.runtimeconfig.json
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\bin\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.runtimeconfig.dev.json
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\bin\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.dll
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\bin\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.pdb
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\obj\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.csprojAssemblyReference.cache
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\obj\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.AssemblyInfoInputs.cache
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\obj\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.AssemblyInfo.cs
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\obj\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.csproj.CoreCompileInputs.cache
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\obj\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.dll
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\obj\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.pdb
+C:\Users\59177\Desktop\6 Semestre\Arquitectura\Diseño Guiado por el Dominio y SOLID\Diseño Guiado por el Dominio y SOLID\obj\Debug\netcoreapp3.1\Diseño Guiado por el Dominio y SOLID.genruntimeconfig.cache
