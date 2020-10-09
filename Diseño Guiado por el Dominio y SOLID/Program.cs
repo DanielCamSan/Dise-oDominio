@@ -1,5 +1,7 @@
 ﻿using Diseño_Guiado_por_el_Dominio_y_SOLID.Clases;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Diseño_Guiado_por_el_Dominio_y_SOLID
 {
@@ -7,7 +9,32 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
     {
         static void Main(string[] args)
         {
-            decimal initialDue=0;
+            Flight flight1 = InitializeValues();
+
+            foreach (var passenger in flight1.Passengers)
+            {
+                //Aqui se usa polimorfismo ya que dentro del assigndue se llama a los metodos y dependiendo del tipo de pasajero que sea 
+                //Se realiza diferentes acciones y se asigna diferentes tarifas a la deuda
+                Console.WriteLine($"\nDear Mr./Ms. {passenger.Name} enjoy the Flight\n");
+                GetDue((IDue)passenger);
+            }
+            
+            
+
+        }
+
+        private static Flight InitializeValues()
+        {
+            Flight flight = new Flight()
+            {
+                NumberOfFly = 1,
+                Airline = "BOA",
+                DepartureTime = new DateTime(2020, 7, 10),
+                Pilot = "Boris",
+                QuantityOfPassengers = 120
+            };
+            List<Passenger> Passengers = new List<Passenger>();
+            decimal initialDue = 0;
             EconomyClass passenger1 = new EconomyClass(initialDue)
             {
                 Ci = 5918928,
@@ -18,6 +45,7 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
                 FlightDate = new DateTime(2020, 7, 10),
                 LuggageWeight = 48
             };
+            Passengers.Add(passenger1);
             EconomyClass passenger2 = new EconomyClass(initialDue)
             {
                 Ci = 5918926,
@@ -28,6 +56,7 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
                 FlightDate = new DateTime(2020, 7, 10),
                 LuggageWeight = 60
             };
+            Passengers.Add(passenger2);
             EconomyClass passenger3 = new EconomyClass(initialDue)
             {
                 Ci = 3723130,
@@ -38,6 +67,7 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
                 FlightDate = new DateTime(2020, 7, 10),
                 LuggageWeight = 20
             };
+            Passengers.Add(passenger3);
             ExecutiveClass passenger4 = new ExecutiveClass(initialDue)
             {
                 Ci = 4862518,
@@ -48,6 +78,7 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
                 FlightDate = new DateTime(2020, 7, 10),
                 LuggageWeight = 65
             };
+            Passengers.Add(passenger4);
             ExecutiveClass passenger5 = new ExecutiveClass(initialDue)
             {
                 Ci = 4786856,
@@ -58,6 +89,7 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
                 FlightDate = new DateTime(2020, 7, 10),
                 LuggageWeight = 35
             };
+            Passengers.Add(passenger5);
             ExecutiveClass passenger6 = new ExecutiveClass(initialDue)
             {
                 Ci = 78115,
@@ -68,6 +100,7 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
                 FlightDate = new DateTime(2020, 7, 10),
                 LuggageWeight = 65
             };
+            Passengers.Add(passenger6);
             FirstClass passenger7 = new FirstClass(initialDue)
             {
                 Ci = 34880808,
@@ -78,6 +111,7 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
                 FlightDate = new DateTime(2020, 7, 10),
                 LuggageWeight = 60
             };
+            Passengers.Add(passenger7);
             FirstClass passenger8 = new FirstClass(initialDue)
             {
                 Ci = 6859985,
@@ -88,24 +122,11 @@ namespace Diseño_Guiado_por_el_Dominio_y_SOLID
                 FlightDate = new DateTime(2020, 7, 10),
                 LuggageWeight = 45
             };
-            Console.WriteLine($"\nDear Mr{passenger1.Name} enjoy the Flight\n");
-            AssignDue(passenger1);
-            Console.WriteLine($"\nDear Mr{passenger2.Name} enjoy the Flight\n");
-            AssignDue(passenger2);
-            Console.WriteLine($"\nDear Mr{passenger3.Name} enjoy the Flight\n");
-            AssignDue(passenger3);
-            Console.WriteLine($"\nDear Mr{passenger4.Name} enjoy the Flight\n");
-            AssignDue(passenger4);
-            Console.WriteLine($"\nDear Mr{passenger5.Name} enjoy the Flight\n");
-            AssignDue(passenger5);
-            Console.WriteLine($"\nDear Mr{passenger6.Name} enjoy the Flight\n");
-            AssignDue(passenger6);
-            Console.WriteLine($"\nDear Mr{passenger7.Name} enjoy the Flight\n");
-            AssignDue(passenger7);
-            Console.WriteLine($"\nDear Mr{passenger8.Name} enjoy the Flight\n");
-            AssignDue(passenger8);
+            Passengers.Add(passenger8);
+            flight.Passengers = Passengers;
+            return flight;
         }
-        private static void AssignDue(IDue pass)
+        private static void GetDue(IDue pass)
         {
             pass.AddLuggageTax();
             pass.AddWeightTax();
